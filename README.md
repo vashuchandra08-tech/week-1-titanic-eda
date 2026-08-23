@@ -1,29 +1,24 @@
-# Titanic Dataset - Data Acquisition, Cleaning, and Exploratory Data Analysis
+# Virtual Data Science with Python Apprentice Internship
 
-## Week 1 - Virtual Data Science with Python Apprentice Intern
+This repository contains my work and assignments completed as part of the **Virtual Data Science with Python Apprentice Internship**.
 
-### Project Overview
+The projects focus on data acquisition, data cleaning, exploratory data analysis, data visualization, and data storytelling using Python.
 
-This project was completed as part of Week 1 of the Virtual Data Science with Python Apprentice Intern program.
+---
 
-The objective of this project is to demonstrate the data preparation and exploratory analysis process using the Titanic passenger dataset. The project covers data acquisition, data cleaning, preprocessing, exploratory data analysis, visualization, and interpretation of findings.
+## 🗂️ Internship Tasks
 
-## Objectives
+### Week 1 – Data Acquisition, Cleaning, and Exploratory Analysis
 
-- Acquire and inspect a publicly available dataset.
-- Identify and handle missing values.
-- Check and handle duplicate records.
-- Verify data types and data quality.
-- Perform descriptive statistical analysis.
-- Explore relationships and patterns within the dataset.
-- Create meaningful data visualizations.
-- Summarize key analytical insights.
+#### Objective
 
-## Dataset
+The objective of Week 1 was to understand the basic data science workflow, including data acquisition, data cleaning, preprocessing, and exploratory data analysis (EDA).
 
-The Titanic dataset contains information about passengers who travelled on the Titanic.
+#### Dataset
 
-The dataset includes variables such as:
+For this task, I used the publicly available **Titanic Passenger Dataset**.
+
+The dataset contains information about passengers such as:
 
 - Passenger ID
 - Survival status
@@ -31,91 +26,59 @@ The dataset includes variables such as:
 - Name
 - Gender
 - Age
-- Number of siblings/spouses aboard
-- Number of parents/children aboard
+- Number of siblings/spouses
+- Number of parents/children
 - Ticket
 - Fare
-- Port of embarkation
+- Embarkation port
 
-The original dataset contains 891 passenger records.
+#### Data Cleaning
 
-## Technologies Used
+The following preprocessing steps were performed:
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Google Colab / Jupyter Notebook
+- Checked the structure and data types of the dataset.
+- Identified missing values.
+- Removed the `Cabin` column because it contained a large percentage of missing values.
+- Filled missing `Age` values using the median.
+- Filled missing `Embarked` values using the mode.
+- Checked for duplicate records.
+- Verified the final dataset after cleaning.
 
-## Data Cleaning
+#### Exploratory Data Analysis
 
-The following data cleaning operations were performed:
+Summary statistics and exploratory visualizations were created using Pandas, Matplotlib, and Seaborn.
 
-### Missing Values
+#### Week 1 Visualizations
 
-- The `Cabin` column contained approximately 77% missing values and was removed because the amount of missing information was too high for reliable imputation.
-- Missing values in `Age` were replaced using the median age.
-- Missing values in `Embarked` were replaced using the mode.
-- After cleaning, no missing values remained.
+- `survival_distribution.png`
+- `survival_by_gender.png`
+- `age_distribution.png`
+- `correlation_heatmap.png`
+- `fare_boxplot.png`
 
-### Duplicate Records
-
-The dataset was checked for duplicate records. No duplicate rows were found.
-
-### Data Types
-
-The data types of all columns were inspected using Pandas. The numerical and categorical columns were found to have appropriate data types for analysis.
-
-## Exploratory Data Analysis
-
-Descriptive statistics and visualizations were used to understand:
-
-- Passenger survival distribution
-- Survival differences by gender
-- Passenger age distribution
-- Relationships between numerical variables
-- Fare distribution and potential outliers
-
-## Visualizations
-
-The project includes the following visualizations:
-
-1. Passenger Survival Distribution
-2. Survival Distribution by Gender
-3. Age Distribution of Passengers
-4. Correlation Heatmap
-5. Fare Distribution and Outliers
-
-## Key Insights
+#### Key Insights
 
 - The overall survival rate was approximately 38%.
-- Survival rates differed considerably between male and female passengers.
-- Passenger class showed an association with survival, with first-class passengers generally having higher survival rates.
-- Passenger ages covered a wide range, with most passengers concentrated around young and middle adulthood.
-- The fare variable showed a wide range and contained high-value observations that appeared as potential outliers.
-- Correlation analysis showed that some numerical variables had noticeable relationships with survival, while others showed weaker associations.
+- Female passengers had a higher survival rate than male passengers.
+- Passenger class was associated with survival.
+- Age showed variation between passengers who survived and those who did not.
+- Fare values contained noticeable variation and outliers.
 
-## Project Files
+---
 
-- `Titanic_EDA_Week1.ipynb` - Complete Python analysis notebook
-- `train.csv` - Original Titanic dataset
-- `titanic_cleaned.csv` - Cleaned dataset
-- `survival_distribution.png` - Survival distribution visualization
-- `survival_by_gender.png` - Survival by gender visualization
-- `age_distribution.png` - Age distribution visualization
-- `correlation_heatmap.png` - Correlation analysis
-- `fare_boxplot.png` - Fare outlier analysis
-- `requirements.txt` - Python dependencies
+# Week 2 – Advanced Data Visualization and Storytelling with Python
 
-## Conclusion
+## Objective
 
-The project demonstrates a complete basic data science workflow, starting from dataset acquisition and inspection through data cleaning, exploratory analysis, visualization, and interpretation.
+The objective of Week 2 was to create advanced visualizations and use them to communicate a clear data story to a non-technical audience.
 
-The analysis shows that factors such as gender and passenger class were associated with survival outcomes in the Titanic dataset. The cleaned dataset is suitable for further statistical analysis or machine learning tasks.
+The Titanic dataset from Week 1 was reused for deeper analysis.
 
-## Author
+## Feature Engineering
 
-**Vasundhara Chandra**
+Two additional features were created:
 
-B.Tech Computer Science
+### FamilySize
+
+```python
+FamilySize = SibSp + Parch + 1
