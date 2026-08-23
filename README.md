@@ -82,3 +82,11 @@ Two additional features were created:
 
 ```python
 FamilySize = SibSp + Parch + 1
+
+## 👩‍💻 Author
+
+**Vasundhara Chandra**
+
+B.Tech Computer Science
+
+Virtual Data Science with Python Apprentice Intern
