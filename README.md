@@ -81,7 +81,7 @@ Two additional features were created:
 ### FamilySize
 
 ```python
-FamilySize = SibSp + Parch + 1
+FamilySize = SibSp + Parch + 1```
 
 ## 👩‍💻 Author
 
