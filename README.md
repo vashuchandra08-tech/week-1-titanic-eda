@@ -1,20 +1,20 @@
 # Virtual Data Science with Python Apprentice Internship
 
+**Author Name:** Vasundhara Chandra
+
 This repository contains my work and assignments completed as part of the **Virtual Data Science with Python Apprentice Internship**.
 
 The projects focus on data acquisition, data cleaning, exploratory data analysis, data visualization, and data storytelling using Python.
 
 ---
 
-## 🗂️ Internship Tasks
+# Week 1 – Data Acquisition, Cleaning, and Exploratory Analysis
 
-### Week 1 – Data Acquisition, Cleaning, and Exploratory Analysis
-
-#### Objective
+## Objective
 
 The objective of Week 1 was to understand the basic data science workflow, including data acquisition, data cleaning, preprocessing, and exploratory data analysis (EDA).
 
-#### Dataset
+## Dataset
 
 For this task, I used the publicly available **Titanic Passenger Dataset**.
 
@@ -32,7 +32,7 @@ The dataset contains information about passengers such as:
 - Fare
 - Embarkation port
 
-#### Data Cleaning
+## Data Cleaning
 
 The following preprocessing steps were performed:
 
@@ -44,11 +44,11 @@ The following preprocessing steps were performed:
 - Checked for duplicate records.
 - Verified the final dataset after cleaning.
 
-#### Exploratory Data Analysis
+## Exploratory Data Analysis
 
 Summary statistics and exploratory visualizations were created using Pandas, Matplotlib, and Seaborn.
 
-#### Week 1 Visualizations
+## Week 1 Visualizations
 
 - `survival_distribution.png`
 - `survival_by_gender.png`
@@ -56,13 +56,13 @@ Summary statistics and exploratory visualizations were created using Pandas, Mat
 - `correlation_heatmap.png`
 - `fare_boxplot.png`
 
-#### Key Insights
+## Week 1 Key Insights
 
 - The overall survival rate was approximately 38%.
 - Female passengers had a higher survival rate than male passengers.
 - Passenger class was associated with survival.
 - Age showed variation between passengers who survived and those who did not.
-- Fare values contained noticeable variation and outliers.
+- Fare values showed noticeable variation and outliers.
 
 ---
 
@@ -76,20 +76,9 @@ The Titanic dataset from Week 1 was reused for deeper analysis.
 
 ## Feature Engineering
 
-Two additional features were created:
+Two additional features were created during the analysis.
 
 ### FamilySize
 
 ```python
 FamilySize = SibSp + Parch + 1
-
-
-**Author**
-
-**Vasundhara Chandra**
-
-B.Tech Computer Science
-
-Virtual Data Science with Python Apprentice Intern
-
-
