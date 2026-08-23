@@ -81,8 +81,9 @@ Two additional features were created:
 ### FamilySize
 
 ```python
-FamilySize = SibSp + Parch + 1```
+FamilySize = SibSp + Parch + 1
 
+```markdown
 ## 👩‍💻 Author
 
 **Vasundhara Chandra**
@@ -90,3 +91,5 @@ FamilySize = SibSp + Parch + 1```
 B.Tech Computer Science
 
 Virtual Data Science with Python Apprentice Intern
+
+
