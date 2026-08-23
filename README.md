@@ -83,8 +83,8 @@ Two additional features were created:
 ```python
 FamilySize = SibSp + Parch + 1
 
-```markdown
-## 👩‍💻 Author
+
+**Author**
 
 **Vasundhara Chandra**
 
